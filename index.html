@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="./scripts/calculo.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="container">  
+<div class="row">  
+<div class="col-md-8 offset-md-2">  
+
+  <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Inicio de Sesión</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registro</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      
+      <form method="post" action="" id="login_form" class="mt-5" onSubmit="return validar_login();" >
+        <div class="form-group">
+          <label for="login_email">Dirección de correo</label>
+          <input type="email" class="form-control" id="login_email" placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="login_password">Contraseña</label>
+          <input type="password" class="form-control" id="login_password" placeholder="">
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+      </form>
+
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      
+      <form method="post" action="" id="register_form" class="mt-5" onSubmit="return validar_registro();"  >
+        <div class="form-group">
+          <label for="register_name">Nombre</label>
+          <input type="text" class="form-control" id="register_name" placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="register_phone">Teléfono</label>
+          <input type="text" class="form-control" id="register_phone" placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="register_email">Dirección de correo</label>
+          <input type="email" class="form-control" id="register_email" placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="register_password">Contraseña</label>
+          <input type="password" class="form-control" id="register_password" placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="register_password2">Confirmar Contraseña</label>
+          <input type="password" class="form-control" id="register_password2" placeholder="">
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
